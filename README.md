@@ -16,6 +16,10 @@
 $ omf install one
 ```
 
+### Note for macOS users
+If you're getting a `expr: syntax error` try expr from coreutils package.
+If you're getting an `Array index out of bounds` error run `brew install --with-default-names gnu-sed`.
+
 ## Features
 
 * Git ahead/behind indicator with number of commits
