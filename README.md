@@ -27,6 +27,16 @@ $ omf install one
 * Display red **[!]** if previous command failed
 * Superuser indicator **[⚡️]**
 
+### Git status indication
+
+* Green **◦** - repository is clean
+* Gray • - repository has **untracked** files
+* Orange • - repository has **renamed** files
+* White • - repository has **copied** files
+* Green • - repository has **added** files
+* Blue • - repository has **updated but unmerged** files
+* Purple • - repository has **modified** files
+
 
 ## Screenshot
 
