@@ -1,12 +1,16 @@
 set __one_color_orange FD971F #   #FD971F
-set __one_color_blue 6EC9DD #     #6EC9DD
-set __one_color_green A6E22E #    #A6E22E
-set __one_color_yellow E6DB7E #   #E6DB7E
+set __one_color_blue 5DC8FD #     #5dc8fd
+set __one_color_deepblue 6caeff #     #6caeff
+set __one_color_green 3ee771 #    #A6E22E
+set __one_color_lgreen 2BED9B #   #2bed9b
+set __one_color_yellow fff788 #   #E6DB7E
 set __one_color_pink F92672 #     #F92672
-set __one_color_grey 554F48 #     #554F48
-set __one_color_white F1F1F1 #    #F1F1F1
+set __one_color_red F76363 #      #ff4747
+set __one_color_grey 747C81 #     #646a6e
+set __one_color_white ebeef0 #    #F1F1F1
 set __one_color_purple 9458FF #   #9458FF
 set __one_color_lilac AE81FF #    #AE81FF
+set __one_color_node 5a7c59 #    #AE81FF
 
 function __one_color_echo
   set_color $argv[1]
@@ -16,6 +20,6 @@ function __one_color_echo
 end
 
 function fish_right_prompt
-  __one_color_echo $__one_color_grey (node --version)
-  __one_color_echo $__one_color_grey " | "(date "+%I:%M %p")
+  __one_color_echo $__one_color_node "⬢ "(node --version)
+  __one_color_echo $__one_color_white ""
 end
