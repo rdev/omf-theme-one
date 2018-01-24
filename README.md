@@ -35,11 +35,14 @@ If you're getting an `Array index out of bounds` error run `brew install --with-
 ## Screenshot
 
 <p align="center">
-<img src="http://stuffs.fivepointseven.com/i/one.png">
+  <a href="http://stuffs.fivepointseven.com/i/fish-one-screenshot.png">
+    <img src="http://stuffs.fivepointseven.com/i/fish-one-screenshot.png">
+  </a>
 </p>
 
 
 Forked from [Toaster](https://github.com/oh-my-fish/theme-toaster)
+
 Aesthetic stolen from [Pure](https://github.com/sindresorhus/pure)
 
 # License
