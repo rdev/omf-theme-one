@@ -98,8 +98,11 @@ function fish_prompt
   set -l git_ahead_behind (__git_ahead)
 
   if test $__one_new_session -eq 0
-    echo
+	if [ "$history[1]" != "clear" ]
+    	echo
+	end
   end
+
   __one_color_echo $__one_color_blue (prompt_pwd)
   __check_ssh
   __one_git_status
