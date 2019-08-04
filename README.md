@@ -26,7 +26,7 @@ If you're getting an `Array index out of bounds` error run `brew install --with-
 * Git ahead/behind indicator with number of commits
 * Git status indicators
 * Git branch info
-* Abreviated working directory
+* Abbreviated working directory
 * Node.js version indicator
 * SSH user/hostname information
 * Prompt sign turns red if previous command failed
