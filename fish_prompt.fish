@@ -29,11 +29,11 @@ function __one_current_folder
 end
 
 function __one_git_status_codes
-  echo (git status --porcelain ^/dev/null | sed -E 's/(^.{3}).*/\1/' | tr -d ' \n')
+  echo (git status --porcelain 2>/dev/null | sed -E 's/(^.{3}).*/\1/' | tr -d ' \n')
 end
 
 function __one_git_branch_name
-  echo (git rev-parse --abbrev-ref HEAD ^/dev/null)
+  echo (git rev-parse --abbrev-ref HEAD 2>/dev/null)
 end
 
 function __one_rainbow
@@ -71,7 +71,7 @@ function __one_git_status
 end
 
 function __git_ahead -d 'Check if there are unpulled or unpushed commits'
-  if set -l ahead_or_behind (command git rev-list --count --left-right 'HEAD...@{upstream}' ^ /dev/null)
+  if set -l ahead_or_behind (command git rev-list --count --left-right 'HEAD...@{upstream}' 2> /dev/null)
     echo $ahead_or_behind | sed 's|\s\+|\n|g'
   else
     echo 0\n0
